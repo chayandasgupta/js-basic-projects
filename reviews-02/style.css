@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: normal;
+    background-color: hsl(210, 36%, 96%);
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main .container {
+    width: 80vw;
+    text-align: center;
+    max-width: 630px;
+}
+
+.container .title {
+    margin-bottom: 40px;
+}
+
+.container .title h2 {
+    line-height: normal;
+    font-size: 42px;
+    color: hwb(340deg 19% 77%);
+    letter-spacing: 3px;
+    font-family: 'Roboto';
+    padding-bottom: 12px;
+}
+
+.container .title .underline {
+    height: 4px;
+    width: 90px;
+    background: rgb(249 90 40);
+    margin: 0 auto;
+}
+
+.review {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.review .img-container {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.review .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.review .img-container:before {content: "";position: absolute;height: 100%;width: 100%;background: #ff5722;border-radius: 50%;right: -8px;top: -4px;}
+
+.review .img-container:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: #ff5722;
+    color: #fff;
+}
+
+h4#author {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+p#job {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ff5722cc;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+p#info {
+    margin-bottom: 20px;
+    line-height: 23px;
+    font-size: 15px;
+    color: #656060;
+}
+
+.button-container .prev-btn, 
+.button-container .next-btn {
+    background: transparent;
+    border-color: transparent;
+    margin: 0px 10px;
+    color: #ff5722;
+    transition: all .3s linear;
+    font-size: 20px;
+    cursor: pointer;
+}
